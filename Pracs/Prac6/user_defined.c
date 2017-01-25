@@ -9,13 +9,13 @@ struct becario{
 	float promedio;
 	char procedencia[12];
 	int generacion;
-	unsigned int proyecto:1;
+  unsigned int proyecto:1; //dice cuántos bits ocupa en memeoria. En este caso 1
 };
 int main()
 {
 	struct becario bec;
 	strcpy(bec.nombre,"Fernando");
 	printf("%s\n",bec.nombre);
-	bec.proyecto=2;
+	bec.proyecto=3;
 	printf((bec.proyecto&1)?"SI\n":"SIN PROYECTO\n");
 }
