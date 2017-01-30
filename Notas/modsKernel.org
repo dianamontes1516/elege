@@ -1,0 +1,34 @@
+* Módulos del kernel
+  Programitas que se le agregan al kernel para expandir su funcionalidad
+  Evita que se tenga que compilar todo el kernel, sólo se compila esa
+  parte y se le agregue a
+** Funciones chidas
+   * *init_module(void)* : instala  un módulo
+   * *printf(int infos,char*mensaje)*: imprime en el kernel, con el diferentes
+     niveles de importancia de información. Ejemplos
+** Dependencias 
+   * apt-get install linux-headers-$(uname -r)
+   * Crear un makefile que se llame Makefile.
+   * El archivo objeto se debe llamar igual que el fuente.
+** Instalación
+   * como root: insmod <mod.ko>
+   * dmesg, verifica las salidas de printk
+** Desinstalación
+   * rmmod <nombde del modulo>
+   * Se sugiere desinstalar un módulo que no hace nada.
+** Info del modulo
+   * MODULE_LICENSE("GLP");
+   * MODULE_AUTHOR("DM_OA");
+   * MODULE_DESCRIPTION("Un hellow world muy fancy");
+   * Comando para el ver la info modinfo
+** Ocultando el modulo de kernel
+   * Para que no aparezca con el comando lsmod.
+   * No aparece dentro de la lista ligada de los módulos de kernel
+   * No existen. Bueno, si, pero no son detectables.
+** Rootkit
+   * Programa que se oculta en el sistema operativo y a veces da permisis de 
+     root. Aunque no necesariamente.
+** Botnet
+   * Command & Control, 
+   * IRC 
+
