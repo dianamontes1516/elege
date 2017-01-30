@@ -1,0 +1,10 @@
+* devices (/dev)
+** Discos 
+
+** entrada *(/dev/input)*
+*** último evento *()* 
+*** leer eventos del teclado:
+    - read(fd, 
+    - revisar el archivo *usr/include/linux/input.h*
+
+sefsdf
