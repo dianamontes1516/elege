@@ -35,9 +35,9 @@ int main(int argc, char *argv[])
 	  * @param int número de bits 
 	  */
 	if(write(fd,"hola123.,\n",10)==-1)
-		fprintf(stderr,"Error al escribir en el archivo.");
+          fprintf(stderr,"Error al escribir en el archivo.");
 //#endif
 
 	if(close(fd)==-1)
-		fprintf(stderr,"No se pudo cerrar el descriptor de archivo");
+          fprintf(stderr,"No se pudo cerrar el descriptor de archivo");
 }
