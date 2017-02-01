@@ -1,0 +1,31 @@
+* Programación segura
+
+* Funciones seguras
+  * scanf es insegura porque soporta expresiones regulares.
+  * gets(char* | char) . Es insegura porque es insestable, pero 
+  
+* Buffer Overflow
+  - Cita de Claudia Eckert, Buffer-Overflow-Angriffe.
+
+* Stack Overflow
+  - Los compiladores modernos de c tienen la pila pila protegida 
+
+* ROP (Return Oriented Programming)
+  - Desensamblamiento de Programming. Analizar las características de 
+    del programa y tratar de verlas en la
+  - Revisar las ligas de la presentación
+
+* Bibliotecas chidas para cifrar fuentes y binarios
+  * upx, perminte cifrar binarios para que tenga el mismo comportaminento
+    pero dice que 
+  * gpg, permite cifrar y dejar inutil un binario.
+  * compilar con la opcion -static para que ponga todas las Bibliotecas
+    que se utiliza. 
+
+
+
+
+
+
+
+
