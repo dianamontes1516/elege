@@ -13,7 +13,7 @@ def salveCesar(ks,m,e):
         k = int(ks)
     else:
         print( ks+" no es un entero")
-
+        sys.exit(1)
     inicio = ord('A')
     fin = ord('z')
     orden = fin - inicio
