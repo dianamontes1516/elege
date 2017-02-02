@@ -1,19 +1,12 @@
 /** Hacer que todas las variables vivan en el heap
+ * o de perdida (como en este caso) 
+ * reducir el códico.
 */
 #include<stdio.h>
 int main()
 {
-	int x = 10;
-	char c[x];
-	c[0]='h';
-	c[1]='o';
-	c[2]='l';
-	c[3]='a';
-	c[4]='\0';
-	for(int i=0;i<10;i++)
-	{
-		if(c[i]=='\0')
-			break;
-		printf("%c\n",c[i]);
-	}
+  char* c = "hola\0";
+  int i=0;
+  while(c[i])
+    printf("%c\n",c[i++]);
 }
