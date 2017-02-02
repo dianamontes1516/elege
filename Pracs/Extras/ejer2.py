@@ -5,7 +5,7 @@ import re, sys
 # entre 10 y 99.
 # y se regresa la suma de sus dígitos
 def sumaDigitos(n):
-    if re.match("^[0-9]+$",n,0) :
+    if re.match("^[0-9]{2}$",n,0) :
         m = int(n)
     else:
         print( n+" no es un entero")
