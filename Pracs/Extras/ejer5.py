@@ -30,7 +30,6 @@ def salveCesar(ks,m,e):
             mTuneado += chr(indice)
     elif e=='2':
         for i in m :
-        for i in m :
             indice = ord(i)-k
             if indice < inicio:
                 indice = fin - (inicio - indice)
