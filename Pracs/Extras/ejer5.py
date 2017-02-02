@@ -8,36 +8,44 @@ import re, sys
 #                si no e, entonces está cifrado.
 # @pram bool e - es la operación que se va a realizar sobre el
 #                texto
-def salveCesar(k,m,e):
-    if re.match("^[-]?[0-9]+$",k,0) :
-        m = int(n)
+def salveCesar(ks,m,e):
+    if re.match("[0-9]+$",ks,0) :
+        k = int(ks)
     else:
-        print( n+" no es un entero")
+        print( ks+" no es un entero")
 
     inicio = ord('A')
     fin = ord('z')
     orden = fin - inicio
+    mTuneado = '';
 
-    k = 
-    ## Si queremos cifrar
-    if e :
-        
-    else:
+    k = k % orden
     
-    alfabeto = "ABCD"
-    if(not (1 <= m <= 8)):
-        print( n+" no está entre 1 y 8")
-        sys.exit(1)
+    ## Si queremos cifrar
+    if e=='1' :
+        for i in m :
+            indice = ord(i)+k
+            if indice > fin:
+                indice = inicio + indice % fin
+            mTuneado += chr(indice)
+    elif e=='2':
+        for i in m :
+        for i in m :
+            indice = ord(i)-k
+            if indice < inicio:
+                indice = fin - (inicio - indice)
+            mTuneado += chr(indice)
 
-    ac ='';
-    for i in range(m) :
-        ac+='9'
-    #Si ambos operandos son enteros  se regresa el resultado de la suma    
-    return ac
+    else:
+            print("No seas wey. Sólo hay dos opciones.")
+
+    return mTuneado
 
 def main():
-    v1 = input("Ingresa el número de dígitos, entre 1 y 8: ") 
-    print( "El entero más grande con esos dígitos es: " + masGrande(v1))
-    
+    v1 = input("Ingresa la llave: ")
+    v2 = input("Ingresa el mensaje: ")
+    v3 = input("Esta en claro el mensaje: \n 1) Si \n 2) No \n")
+    print( "Resultado: " + salveCesar(v1,v2,v3))
+                                            
 if __name__ == "__main__":
     main()
